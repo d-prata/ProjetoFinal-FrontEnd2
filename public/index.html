@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <title>Página de Login</title>
+</head>
+<body>    
+    <div class="container" id="container"><!-- container-principal: início -->
+        <div class="form-container cadastro-container"><!-- div-cadastro: início -->
+            <form id="formulario-cadastro">
+                <h1>Cadastre-se!</h1>                
+                <input type="text" placeholder="Nome" id="input-cadastro-nome" />
+                <input type="email" placeholder="E-mail" id="input-cadastro-email" />
+                <input type="password" placeholder="Senha" id="input-cadastro-senha" />
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div><!-- div-cadastro: fim -->
+        <div class="form-container login-container"><!-- div-login: início -->
+            <form id="formulario-login">
+                <h1>Logar</h1>                
+                <input type="email" placeholder="E-mail" id="input-login-email" required>
+                <input type="password" placeholder="Senha" id="input-login-senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div><!-- div-login: fim -->
+        <div class="overlay-container"><!-- div-container-overlay: início -->
+            <div class="overlay"><!-- div-overlay: início -->
+                <div class="overlay-panel overlay-left"><!-- div-acesso/login: início -->
+                    <p>Execute o login com suas informações pessoais</p>
+                    <button class="btn-animacao" id="signIn">Acessar conta</button>
+                </div><!-- div-acesso/login: fim -->
+                <div class="overlay-panel overlay-right"><!-- div-acesso/cadastro: início -->
+                    <p>Cadastre-se para utilizar a página</p>
+                    <button class="btn-animacao" id="signUp">Criar uma conta</button>
+                </div><!-- div-acesso/cadastro: fim -->
+            </div><!-- div-overlay: fim -->
+        </div><!-- div-container-overlay: fim -->
+    </div><!-- container-principal: fim --> 
+    <audio class="controls" controls loop preload="auto" src="./assets/music/Narcos y Pericos.mp3"></audio>
+    <footer>Aperte o play!</footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
